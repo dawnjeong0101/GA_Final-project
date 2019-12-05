@@ -1,0 +1,52 @@
+.container_About{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	column-gap: 25px;
+	row-gap: 25px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.myPhoto{
+	grid-column: 1/4;
+	padding: 30px;
+}
+.introduction{
+	grid-column: 4/8;
+	padding: 30px 30px;
+}
+#title_intro{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1.6em;
+	padding: 20px 0px;
+	color: #101820;
+}
+.introduction #paragraph{
+	font-size: 1.2em;
+	line-height: 1.4em;
+
+}
+#paragraph p{
+  margin-bottom: 30px;
+}
+#resume{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  color: #101820;
+  background: #FDD20E;
+  text-decoration: none;
+}
+@media screen and (max-width:800px){
+  .myPhoto{
+  	grid-column: 1/8;
+  	padding: 30px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .introduction{
+  	grid-column:1/8;
+  	padding: 40px 40px;
+  }
+}

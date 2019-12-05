@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443 443">
+<defs>
+<style>.myName{font-size:60px;font-family:Alegreya-Regular, Alegreya;}.myName,.jobTitle{fill:#fcd20e;}.jobTitle{font-size:16px;font-family:Roboto-Thin, Roboto;font-weight:200;letter-spacing:0.4em;}.introCircle{fill:none;stroke:#e8c10d;stroke-miterlimit:10;stroke-width:18px;}</style>
+</defs>
+<title>introLogo</title>
+<g id="Layer_2" data-name="Layer 2">
+<g id="Layer_1-2" data-name="Layer 1">
+<text class="myName" transform="translate(72.09 242.73)">Dawn Jeong</text>
+<text class="jobTitle" transform="translate(135.83 279.73)">UX/UI DESIGN</text>
+<circle class="introCircle" cx="221.5" cy="221.5" r="212.5"/>
+</g>
+</g>
+</svg>

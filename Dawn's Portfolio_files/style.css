@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body,html{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+	width: 100%;
+  height: 100%;
+  margin: 0;
+  color: #101820;
+}
+
+
+#blackScreen{
+	width:100%;
+	height:100%;
+	background-color:#101820;
+	position: absolute;
+	transition-duration: 2s;
+	z-index: 300;
+	display: none;
+}
+
+
+
+h1{
+  font-family: 'Alegreya','PT serif', serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0.2em;
+}
+h2{
+  font-family: 'Alegreya','PT serif', serif;
+  font-weight: 400;
+  margin: 0;
+}
+h3,h4{
+  margin: 0.5em;
+}
+
+.topnav{
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.16), 0 1px 5px 0 rgba(0,0,0,0.12);
+  z-index: 100;
+	text-align: center;
+	border-bottom: 4px solid #fcd20e;
+}
+
+.logo {
+ font-family: 'Alegreya','PT serif', serif;
+ color:#101820;
+ padding: 40px 15px 20px 15px;
+ font-size: 2.5em;
+}
+.menu {
+	padding: 15px 0 30px 0;
+}
+.menu a{
+  color: #101820;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.menu a:hover {
+  color: #fcd20e;
+}
+.menuIcon{
+  display: none;
+  float: right;
+}
+main{
+  padding: 220px 45px 45px 45px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 25px;
+  row-gap: 25px;
+	max-width: 1400px;
+  margin: 0 auto;
+}
+
+.item1, .item3, .item5{
+		grid-column: 1/4;
+}
+.item2, .item4, .item6{
+		grid-column: 4/7;
+}
+.card {
+  overflow:hidden;
+	position: relative;
+	text-align: center;
+}
+.title{
+	display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1.6em;
+	padding: 10px 15px;
+	z-index: 30;
+	width:100%;
+	color: #101820;
+}
+
+.photo{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.card:hover .title{
+	display: block;
+	opacity: 1;
+	background-color:rgb(253,210,14,0.7);
+}
+.card:hover > .photo{
+	background-color: #FDD20E;
+	opacity: 0.7;
+}
+
+@media screen and (max-width:900px) {
+  .logo {
+   float: left;
+	 padding: 15px;
+	 line-height: 0.6em;
+  }
+  main{
+    padding:20px;
+  }
+  #works, #aboutMe{
+    max-width:100%;
+  }
+  #Characters{
+    padding: 25px 5%;
+  }
+  .item1, .item2, .item3, .item4, .item5, .item6{
+      grid-column: 1/7;
+  }
+  .card{
+    height:auto;
+  }
+  #intro{
+    background-size: auto 100%;
+    padding-top: 100px;
+    height: 400px;
+  }
+	.menu{
+	  display: none;
+	}
+	.menuIcon{
+	  display: block;
+	}
+	.menuIcon img{
+	  position: relative;
+	  height: 1.5em;
+	  padding: 15px 25px 15px 15px;
+	  width: auto;
+		float: right;
+	}
+}
+
+.circle_container{
+	width: 300px !important;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#ani {
+	stroke-dasharray:1333;
+	stroke-dashoffset:1000;
+	animation: circleAni 2s linear;
+	animation-delay: 1s;
+}
+@keyframes circleAni {
+	to {stroke-dashoffset: 0;}
+}
+#pattern1{
+	top:-200px;
+	right: -300px;
+}
+#pattern2{
+	bottom:-200px;
+	left: -500px;
+}
+#pattern1, #pattern2{
+	position: absolute;
+	animation: spin 7s linear infinite;
+}
+@keyframes spin {100%{transform: rotate(15deg)}
+
+}
+.container_About{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	column-gap: 25px;
+	row-gap: 25px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.myPhoto{
+	grid-column: 1/4;
+	padding: 30px;
+}
+.introduction{
+	grid-column: 4/8;
+	padding: 40px 40px;
+}
+.title_intro{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1.6em;
+	padding: 20px 0px;
+	color: #101820;
+}
+.introduction p{
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+footer {
+  padding: 25px;
+  text-align: center;
+  background-color: #101820;
+  color: white;
+  font-size: 0.8em;
+}
